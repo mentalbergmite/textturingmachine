@@ -1,0 +1,146 @@
+2025-03-08 16:29:30.824870
+dtm tape from module 3 video, returns yes
+Current state:bb
+Current state:1
+Current state:10
+Current state:101
+Current state:1010
+Current state:10100
+Current state:101000
+Current state:10100
+Current state:1010
+Current state:101
+
+Yes
+Final state: 101
+
+returns NO from q1
+Current state:bb
+Current state:0
+Current state:
+Current state:
+Current state:
+
+No
+Final state:
+
+returns NO from q3
+Current state:bb
+Current state:1
+Current state:
+Current state:
+Current state:
+
+No
+Final state:
+
+dtm addition, expected result 10010
+Current state:bb
+Outputting log to file output.txt
+Finished state:10010
+
+dtm addition error case: no number before +(should throw recursion exception)
+Current state:bb
+Expected computation time exceeded , aborting operation
+
+dtm addition edge case: no number after +, assumes addition by 0
+Current state:bb
+Current state:1
+Current state:11
+Current state:110
+Current state:1101
+Current state:11011
+Current state:110110
+Current state:1101101
+Current state:1101101
+Current state:1101101
+Current state:1101101
+Current state:1101101
+
+1101101
+
+dtm addition error case: multiple + signs
+Current state:bb
+No transition from state q_add1 on symbol + , aborting operation
+
+dtm subtraction, expected result of 0110
+Current state:bb
+Outputting log to file output.txt
+Finished state:0110
+
+
+dtm subtraction error case: no number before -(should throw recursion exception)
+Current state:bb
+Expected computation time exceeded , aborting operation
+
+dtm subtraction edge case: no number after -, assumes subtraction by 0
+Current state:bb
+Current state:1
+Current state:11
+Current state:110
+Current state:1101
+Current state:11011
+Current state:110111
+Current state:1101111
+Current state:1101111
+Current state:1101111
+Current state:1101111
+Current state:1101111
+
+1101111
+dtm subtraction error case:multiple - signs
+Current state:bb
+No transition from state q_sub1 on symbol - , aborting operation
+
+Enter a string or "exit" to exit: 100+100
+Current state:bb
+Outputting log to file output.txt
+Finished state:1000
+Result output to file
+Enter a string or "exit" to exit: 1+1
+Current state:bb
+Current state:1
+Current state:1
+Current state:11
+Current state:1
+Current state:1
+Current state:
+Current state:
+Current state:1
+Current state:10
+Current state:10
+Current state:100
+Current state:10
+Current state:10
+Current state:10
+Current state:10
+Current state:10
+
+10
+Enter a string or "exit" to exit: 1000-1
+Current state:bb
+Current state:1
+Current state:10
+Current state:100
+Current state:1000
+Current state:1000
+Current state:10001
+Current state:1000
+Current state:1000
+Current state:100
+Current state:10
+Current state:1
+Current state:
+Current state:0
+Current state:01
+Current state:011
+Current state:0111
+Current state:0111
+Current state:01110
+Current state:0111
+Current state:0111
+Current state:0111
+Current state:0111
+
+0111
+Enter a string or "exit" to exit:exit
